@@ -13,7 +13,7 @@ func Calculator(a float64, op string, b float64) (float64, error) {
 			return a + b, nil
 		case "-":
 			return a - b, nil
-		case "*":
+		case "*", "x", "X":
 			return a * b, nil
 		case "/":
 			if (b == 0) {

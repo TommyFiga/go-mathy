@@ -14,7 +14,7 @@ It was created as a learning project while exploring Go and CLI development.
 
 ---
 
-## Instalation
+## Installation
 ### Option 1: `go install` (requires Go 1.18+)
 
 ``` bash
@@ -63,7 +63,7 @@ When using `*`, you must wrap it in quotes to prevent shell expansion.
 go-mathy 4 "*" 3
 ```
 
-Alternatevly, `go-mathy` supports the usage of `x` and `X` for the multiplication operation.
+Alternatively, `go-mathy` supports the usage of `x` and `X` for the multiplication operation.
 
 ``` bash
 go-mathy 4 x 3

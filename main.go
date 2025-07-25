@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"log"
 	"os"
+
+	"github.com/TommyFiga/go-mathy/calc"
 )
 
 
@@ -21,17 +23,17 @@ func main() {
 	operator := args[2]
 	input2 := args[3]
 
-	num1, err := convertToNumber(input1)
+	num1, err := calc.ConvertToNumber(input1)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	num2, err := convertToNumber(input2)
+	num2, err := calc.ConvertToNumber(input2)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	res, err := Calculator(num1, operator, num2)
+	res, err := calc.Calculator(num1, operator, num2)
 	if err != nil {
 		log.Fatal(err)
 	}
